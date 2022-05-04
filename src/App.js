@@ -3,24 +3,22 @@ import {
     BrowserRouter,
     Routes,
     Route
-  } from "react-router-dom";
+} from "react-router-dom";
 import HomeController from './controllers/Home'
 import MarketMaker from './controllers/MarketMaker';
 import './assets/scss/style.scss';
-
 
 class App extends React.Component {
     render() {
         return (
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<HomeController />} />
-                    <Route path="/marketmaker" element={<MarketMaker />} />
+                    <Route path="/tree" element={<HomeController />} />
+                    <Route path="/tree/marketmaker" element={<MarketMaker />} />
                 </Routes>
             </BrowserRouter>
         )
     }
 }
-
 
 export default App

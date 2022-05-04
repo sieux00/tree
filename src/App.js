@@ -15,7 +15,7 @@ class App extends React.Component {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<HomeController />} />
-                    <Route path="marketmaker" key="yknaj" hash='#marketmaker' element={<MarketMaker />} />
+                    <Route path="/marketmaker" element={<MarketMaker />} />
                 </Routes>
             </BrowserRouter>
         )

@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import {
+    BrowserRouter,
+    Routes,
+    Route
+  } from "react-router-dom";
 import HomeController from './controllers/Home'
-
+import MarketMaker from './controllers/MarketMaker';
 import './assets/scss/style.scss';
 
 
 class App extends React.Component {
     render() {
         return (
-            <React.Fragment>
-                <HomeController />
-            </React.Fragment>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<HomeController />} />
+                    <Route path="marketmaker" element={<MarketMaker />} />
+                </Routes>
+            </BrowserRouter>
         )
     }
 }

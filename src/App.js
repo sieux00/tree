@@ -13,8 +13,8 @@ class App extends React.Component {
         return (
             <BrowserRouter>
                 <Routes>
-                    <Route path="/tree" element={<HomeController />} />
-                    <Route path="/tree/marketmaker" element={<MarketMaker />} />
+                    <Route path="/tree" exact element={<HomeController />} />
+                    <Route path="/tree/marketmaker" exact element={<MarketMaker />} />
                 </Routes>
             </BrowserRouter>
         )
